@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Name : KAUNG HSET AUNG 
+         Class: DIT/1B/11
+         Admin No: 2340698 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset 1</title>
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>                                                                                      <!-- Start of main within which everything is concealed -->
+        <form id="userinput">
+            <h1 id="mainlabel">HDB Price Information</h1>                                       <!-- Main header to display to front end user -->
+            <label for="townSelect"><strong>Select a town:</strong></label>                     <!-- Label and selection box for user to select an input -->
+            <select id="townSelect" name="towns"></select>
+            <button type="button" id="submit_btn">Submit</button>                               <!-- Submit button for user to submit the selected input -->
+        </form>
+        
+        <div id="list">                                                                         <!-- div to display highest and lowest price HDB for each flat type in selected town -->
+            <h2>Highest and lowest price HDB in selected town</h2>
+        </div>
+        <div id="list2">                                                                        <!-- div to display mean and median price HDB for each flat type in selected town -->
+            <h2>Mean and median HDB price in selected town</h2>
+        </div>
+    </main>
+    
+    <script src="./js/index.js"></script>
+    <script src="./webComponents/townCard.js"></script>
+    <script src="./webComponents/mean_medianCard.js"></script>
+</body>
+</html>
